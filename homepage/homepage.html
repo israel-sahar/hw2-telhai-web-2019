@@ -15,19 +15,33 @@
 
 <body>
     <div class="container-fluid">
+        <!--LOGO ROW-->
         <div id="row">
-            <div class="col-6 bg-success">
-                ss
-            </div>
-
-            <!--IMAGE COL-->
-            <div class="col-6">
-                <img class="img-fluid" src="https://www.mediashower.com/blog/wp-content/uploads/2017/03/calculate-1.jpg"
-                    alt="" />
-            </div>
+                <img class="img-fluid img-thumbnail" src="logo.png" alt="" style="width: 100%">
         </div>
+        <div class="row">
+            <h3 class="col-12 text-center font-italic pt-4">מחשבון המרות - ניצני/ניצולי תל חי 2019</h6>
+        </div>
+
+        <div class="row flex-row-reverse pb-3">
+                <div class="col-12 col-lg-6 text-center display-4" style="direction: rtl">הקוד המוצפן שלך הוא:</div>
+                <div class="col-12 col-lg-6 text-center display-4" id="encrypted-text" ></div>
+                
+            </div>
+           
+        <div class="row center-block">
+                <input id="user-answer" class="form-control text-center " type="text" placeholder="הכנס את תשובתך כאן">
+        </div>
+        <div class="row">
+            <div class="col-lg-12 pt-2 text-center">   
+            <button type="submit text-center" class="btn btn-primary" onclick="CheckUserInput('user-answer')">תעביר אותי למחשבון</button>
+        </div> 
+        </div>
+    
     </div>
 
+    <script src="script.js">
+    </script>
 </body>
 
 </html>
