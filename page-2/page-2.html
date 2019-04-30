@@ -1,38 +1,46 @@
-<html>
-    <body>
-       
-        
-        <input type="text" id="input">
-        <select onselect="checkInput()" id="selecBox">
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-              </select>
+<!DOCTYPE html>
+<html lang="en">
 
-        <script>
-            function checkInput()
-            {
-                var userInput,sbox,text;
-                userInput = document.getElementById("input").value;
-                sbox = document.getElementById("selecBox").value;
-                if(isNaN(userInput)||userInput == "")
-                {
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <input type="text" id="input">
+    <select onchange="checkInput()" id="selecBox">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <button onclick="checkInput()" type="submit">1554</button>
+
+    <script>
+        function checkInput() {
+            console.log("Check")
+            var userInput, sbox, text;
+            userInput = document.getElementById("input").value;
+            sbox = document.getElementById("selecBox").value;
+            if (isNaN(userInput) || userInput == "") {
                 text = "not a valid input";
                 document.getElementById("input").value = text;
-                }
-                else
-                {
+            }
+            else {
                 text = userInput.toString(sbox);
                 document.getElementById("input").value = text;
-                }
             }
-        </script>
-        
-    </body>
+        }
+    </script>
+</body>
+
 </html>
