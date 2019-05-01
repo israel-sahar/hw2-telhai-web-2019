@@ -20,6 +20,7 @@
         <div class="container text-center">
     <input type="text" id="input">
     <select onchange="checkInput()" id="selecBox">
+        <option value="10">10</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
@@ -28,7 +29,7 @@
         <option value="7">7</option>
         <option value="8">8</option>
         <option value="9">9</option>
-        <option value="10">10</option>
+       
     </select>
     <button onclick="checkInput()" type="submit">1554</button>
 </div>
@@ -36,7 +37,7 @@
         function checkInput() {
             console.log("Check")
             var userInput, sbox, text;
-            userInput = document.getElementById("input").value;
+            userInput = Number( document.getElementById("input").value);
             sbox = document.getElementById("selecBox").value;
             if (isNaN(userInput) || userInput == "") {
                 text = "not a valid input";
