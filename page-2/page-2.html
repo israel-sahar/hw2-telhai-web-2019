@@ -29,7 +29,7 @@
         function checkInput() {
             console.log("Check")
             var userInput, sbox, text;
-            userInput = document.getElementById("input").value;
+            userInput = Number( document.getElementById("input").value);
             sbox = document.getElementById("selecBox").value;
             if (isNaN(userInput) || userInput == "") {
                 text = "not a valid input";
