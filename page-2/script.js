@@ -7,7 +7,8 @@
                 if(isNaN(userInput)||userInput == "")
                 {
                 text = "not a valid input";
-                document.getElementById("input").value = text;
+                document.getElementById("input").value = "";
+                document.getElementById("input").placeholder = text;
                 }
                 else
                 {

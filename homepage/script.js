@@ -73,16 +73,16 @@ function strtoCheck() {
     return changeSt
 }
 
+console.log(strtoCheck())
 function CheckUserInput(input)
 {
-    
+    console.log(strtoCheck())
     if(document.getElementById(input).value===strtoCheck())
     {
         window.location.href ="../page-2/page-2.html"      
     }
     else
     {
-        console.log(strtoCheck())
         document.getElementById(input).value=""
         document.getElementById(input).placeholder="ההתחברות נכשלה - נסה שוב"
     }
