@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-        <link rel="stylesheet"
-        href="style.css"/>
+        
 
 <head>
     <meta charset="UTF-8">
@@ -12,11 +11,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <title>Document</title>
+    <title>מחשבון המרות - ניצני/ניצולי תל חי 2019</title>
+    
 </head>
 
 <body>
-        <div class="bg-1">
+        <div class="bg-1 mt-5">
             <div class="container">
                 <h3 class="text-center">BASES CALCULATOR</h3>
                 <p class="text-center">All you need is a number, then choose a base<br>And you will get what you need!</p>
@@ -30,13 +30,13 @@
                         <div class="thumbnail">
                             <img src="calculator.png">
     
-                            <input class="form-control" id="input" name="name" placeholder="Put your number here:"
+                            <input class="form-control" id="input" name="name" placeholder="Put your number here"
                                 type="text" required>
     
                             <p>Choose the base wanted:</p>
                             <p>
                                 
-                                    <select id="selectBox" class="dropdown-toggle" data-toggle="dropdown" onchange="checkInput()"
+                                    <select id="selectBox" class="dropdown-toggle" data-toggle="dropdown"
                                         >
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -46,7 +46,7 @@
                                         <option value="7">7</option>
                                         <option value="8">8</option>
                                         <option value="9">9</option>
-                                        <option value="10">10</option>
+                                        <option value="10" selected>10</option>
                                     </select>
                                 
                             </p>
@@ -64,8 +64,7 @@
                 </div>
             </div>
     
-    <script src="script.js">
-    </script>
+    <script src="script.js">  </script>
 </body>
 
 </html>

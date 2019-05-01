@@ -3,7 +3,7 @@
             {
                 var userInput,sbox,text;
                 userInput =Number( document.getElementById("input").value);
-                sbox = document.getElementById("selecBox").value;
+                sbox = document.getElementById("selectBox").value;
                 if(isNaN(userInput)||userInput == "")
                 {
                 text = "not a valid input";

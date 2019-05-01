@@ -1,4 +1,4 @@
-const COMMA_INDEX = 44, DOT_INDEX = 46, NUM_LOW = 49, NUM_HI = 57, LET_HI_LOW = 65, LET_HI_HI = 90, LET_LOW_LOW = 97, LET_LOW_HI = 122
+const COMMA_INDEX = 44, DOT_INDEX = 46, NUM_LOW = 48, NUM_HI = 57, LET_HI_LOW = 65, LET_HI_HI = 90, LET_LOW_LOW = 97, LET_LOW_HI = 122,ZERO_ASCII=48
 const MIN_LEN = 5, MAX = 16
 
 var len = Math.floor(Math.random() * MAX) + MIN_LEN;
@@ -56,7 +56,13 @@ function strtoCheck() {
         }
         else {
             if (asciiVal >= NUM_LOW && asciiVal <= NUM_HI) {
+                if(asciiVal==ZERO_ASCII)
+                {
+                    changeSt = changeSt + 0
+                }
+                else{
                 changeSt = changeSt + Math.abs(10 - parseInt(randomSt[index]))
+                }
             }
             else {
                 IndextoReplace.push(index)
