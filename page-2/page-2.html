@@ -16,40 +16,55 @@
 </head>
 
 <body>
-
-        <div class="container text-center">
-    <input type="text" id="input">
-    <select onchange="checkInput()" id="selecBox">
-        <option value="10">10</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <p id="cc"></p>
-       
-    </select>
-    <button onclick="checkInput()" type="submit">1554</button>
-</div>
-    <script>
-        document.getElementById("cc").innerHTML="shalom"
-        function checkInput() {
-            console.log("Check")
-            var userInput, sbox, text;
-            userInput = document.getElementById("input").value;
-            sbox = document.getElementById("selecBox").value;
-            if (isNaN(userInput) || userInput == "") {
-                text = "not a valid input";
-                document.getElementById("input").value = text;
-            }
-            else {
-                text = userInput.toString(sbox);
-                document.getElementById("input").value = text;
-            }
-        }
+        <div class="bg-1">
+            <div class="container">
+                <h3 class="text-center">BASES CALCULATOR</h3>
+                <p class="text-center">All you need is a number, then choose a base<br>And you will get what you need!</p>
+    
+                <div class="col-sm-4">
+                </div>
+    
+                <div class="col-sm-4">
+                    <div class="row text-center">
+    
+                        <div class="thumbnail">
+                            <img src="calculator.png">
+    
+                            <input class="form-control" id="input" name="name" placeholder="Put your number here:"
+                                type="text" required>
+    
+                            <p>Choose the base wanted:</p>
+                            <p>
+                                
+                                    <select id="selectBox" class="dropdown-toggle" data-toggle="dropdown" onchange="checkInput()"
+                                        >
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                
+                            </p>
+                            <button  class="btn" onclick="checkInput()" type="submit">START</button>
+    
+                        </div>
+    
+                        <div class="col-sm-4">
+                        </div>
+    
+                    </div>
+    
+    
+    
+                </div>
+            </div>
+    
+    <script src="script.js">
     </script>
 </body>
 
