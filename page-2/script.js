@@ -13,6 +13,6 @@
                 else
                 {
                 text = userInput.toString(sbox);
-                document.getElementById("input").value = text;
+                document.getElementById("inputOut").value = text;
                 }
             }
