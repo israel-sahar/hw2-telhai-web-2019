@@ -7,37 +7,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>מחשבון המרות</title>
 
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 
-<body>
-    <div class="container-fluid">
+<body style="background-color:#2d2d30;">
+    <div class="container-fluid text-center">
         <!--LOGO ROW-->
         <div id="row">
-                <img class="img-fluid img-thumbnail" src="logo.png" alt="" style="width: 100%">
+            <img class="img-fluid img-thumbnail" src="logo.png" alt="" style="width: 65%">
         </div>
-        <div class="row">
-            <h3 class="col-12 text-center font-italic pt-4">מחשבון המרות - ניצני/ניצולי תל חי 2019</h6>
+        <div class="row col-md-8 text-center">
+            <h3 class="pt-4">מחשבון המרות - ניצני/ניצולי תל חי 2019</h3>
         </div>
 
-        <div class="row flex-row-reverse pb-3">
-                <div class="col-12 col-lg-6 text-center display-4" style="direction: rtl">הקוד המוצפן שלך הוא:</div>
-                <div class="col-12 col-lg-6 text-center display-4" id="encrypted-text" ></div>
-                
+        <div class="row flex-row-reverse col-md-8 center-block" >
+            <div class="text-center pt-4" style="direction: rtl">הקוד המוצפן שלך הוא:</div>
+            <div class="text-center pt-4" id="encrypted-text"></div>
+
+        </div>
+
+        <div class="row center-block col-md-8">
+            <input id="user-answer" class="form-control text-center " type="text" placeholder="הכנס את תשובתך כאן">
+        </div>
+        <div class="row col-md-8">
+            <div class="col-lg-12 pt-2 text-center">
+                <button type="submit text-center" class="btn btn-primary" onclick="CheckUserInput('user-answer')">תעביר
+                    אותי למחשבון</button>
             </div>
-           
-        <div class="row center-block">
-                <input id="user-answer" class="form-control text-center " type="text" placeholder="הכנס את תשובתך כאן">
         </div>
-        <div class="row">
-            <div class="col-lg-12 pt-2 text-center">   
-            <button type="submit text-center" class="btn btn-primary" onclick="CheckUserInput('user-answer')">תעביר אותי למחשבון</button>
-        </div> 
-        </div>
-    
+
     </div>
 
     <script src="script.js">
