@@ -8,3 +8,4 @@ Sahar Israel
 
 Homepage link:
 https://israel-sahar.github.io/hw2-telhai-web-2019/homepage/homepage.html
+[ לצורך הנוחות התשובה להתחברות לאתר יושבת ב-console.]
