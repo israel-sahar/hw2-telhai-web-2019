@@ -85,6 +85,7 @@ function CheckUserInput(input)
     console.log(strtoCheck())
     if(document.getElementById(input).value===strtoCheck())
     {
+        document.getElementById(input).value=""
         window.location.href ="../page-2/page-2.html"      
     }
     else
