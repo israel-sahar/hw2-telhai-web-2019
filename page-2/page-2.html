@@ -35,12 +35,12 @@
                             <input class="form-control" id="input" name="name" placeholder="Put your number here"
                                 type="text" required>
     
-                            <p>Choose the base wanted:</p>
+                            
                             
                                     
                             <div class="row">
-                                    
-                                    <select id="selectBox" class=" dropdown-toggle" data-toggle="dropdown"
+                                <p>from base:</p>
+                                    <select id="selectFromBox" class=" dropdown-toggle" data-toggle="dropdown"
                                         >
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -53,11 +53,27 @@
                                         <option value="10" selected>10</option>
                                     </select>
                                     
-                            
-                            
-                            <button  class=" btn" onclick="checkInput()" type="submit">START</button>
-
                                 </div>
+
+                                <div class="row">
+                                    <p>to base:</p>
+                                        <select id="selectToBox" class=" dropdown-toggle" data-toggle="dropdown"
+                                            >
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10" selected>10</option>
+                                        </select>
+                                        
+                                    </div>
+
+                                <button  class=" btn" onclick="checkInput()" type="submit">START</button>
+
 
                             <input class="form-control" id="inputOut" name="name" placeholder="The answer is:"
                             type="text" disabled>
