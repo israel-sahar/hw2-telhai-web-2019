@@ -11,7 +11,6 @@
             {
                 var userInput,sbox,text;
                 userInput =Number( document.getElementById("input").value);
-                sbox = document.getElementById("selectFromBox").value;
                 if(isNaN(userInput)||userInput == "")
                 {
                 text = "not a valid input";
@@ -20,7 +19,6 @@
                 }
                 else
                 {
-                text = userInput.toString(sbox);
                 document.getElementById("inputOut").value = ConvertBase(document.getElementById("input").value,document.getElementById("selectFromBox").value,document.getElementById("selectToBox").value)
                 }
             }
